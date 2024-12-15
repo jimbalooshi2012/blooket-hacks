@@ -67,7 +67,3 @@ Error generating stack: `+o.message+`
  */const op="startTransition",Ju=_c[op];function ip(e){let{basename:t,children:n,future:r,window:l}=e,o=U.useRef();o.current==null&&(o.current=$d({window:l,v5Compat:!0}));let i=o.current,[u,s]=U.useState({action:i.action,location:i.location}),{v7_startTransition:c}=r||{},v=U.useCallback(m=>{c&&Ju?Ju(()=>s(m)):s(m)},[s,c]);return U.useLayoutEffect(()=>i.listen(v),[i,v]),U.createElement(lp,{basename:t,children:n,location:u.location,navigationType:u.action,navigator:i})}var $u;(function(e){e.UseScrollRestoration="useScrollRestoration",e.UseSubmit="useSubmit",e.UseSubmitFetcher="useSubmitFetcher",e.UseFetcher="useFetcher"})($u||($u={}));var qu;(function(e){e.UseFetchers="useFetchers",e.UseScrollRestoration="useScrollRestoration"})(qu||(qu={}));Kl.createRoot(document.getElementById("root")).render(I.jsx(ip,{basename:"/",children:I.jsx(Jd,{})}));
 
 // Optional: Log when the music starts playing
-const audio = document.getElementById('background-music');
-audio.addEventListener('play', () => {
-    console.log("Music is playing automatically!");
-});
